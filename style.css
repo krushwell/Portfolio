@@ -46,7 +46,6 @@ h2 {
     height: 500px; /* Fixed height for consistency */
     display: flex;
     flex-direction: column; /* Distribute content vertically */
-    justify-content: flex-start; /* Start with items at the top */
 }
 
 .project-tile h3 {
@@ -65,7 +64,7 @@ h2 {
 .project-tile p {
     color: #d1d1d6;
     margin: 10px 0;
-    margin-top: auto; /* Push the text to the bottom */
+    margin-top: auto; /* Ensures the text stays at the bottom */
 }
 
 .tag-container {
@@ -82,4 +81,26 @@ h2 {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px; /* Smaller font size for tags */
+}
+
+.project-tile a {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    height: 100%; /* Make the link fill the tile */
+    text-decoration: none; /* Removes underline from links */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #a1a1a6;
+}
+
+a {
+    color: #9e78d1; /* Soft purple for links */
+}
+
+a:hover {
+    text-decoration: underline;
 }
