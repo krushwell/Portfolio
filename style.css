@@ -18,7 +18,7 @@ h1 {
 section {
     display: flex; /* Enables flexbox layout */
     flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    justify-content: space-between; /* Distributes space between items */
+    justify-content: center; /* Centers the items horizontally */
     margin-top: 40px;
 }
 
@@ -31,7 +31,7 @@ section div {
     border: 1px solid #444; /* Light border */
     border-radius: 5px; /* Rounded corners */
     padding: 15px; /* Space inside the div */
-    margin-bottom: 20px; /* Space below each project */
+    margin: 10px; /* Space around each project div */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
     flex: 1 1 45%; /* Makes each project div take up about 45% of the row */
     max-width: 45%; /* Prevents the divs from growing too wide */
