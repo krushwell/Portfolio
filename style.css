@@ -28,9 +28,12 @@ h2 {
 
 .project-container {
     display: flex;
-    justify-content: center; /* Aligns tiles in the center */
-    gap: 20px; /* Space between tiles */
+    justify-content: space-between; /* Space out tiles evenly across the container */
     flex-wrap: nowrap; /* Forces tiles to stay on the same row */
+    gap: 20px; /* Space between tiles */
+    width: 100%; /* Ensures the container takes the full width */
+    max-width: 1200px; /* Optional: set a max width for larger screens */
+    margin: 0 auto; /* Centers the container */
 }
 
 .project-tile {
@@ -43,14 +46,7 @@ h2 {
     height: 500px; /* Fixed height for consistency */
     display: flex;
     flex-direction: column; /* Distribute content vertically */
-    justify-content: space-between; /* Evenly space out elements */
-}
-
-.project-tile img {
-    width: 100%;
-    height: 200px; /* Ensures all images are the same height */
-    object-fit: cover; /* Crop images nicely */
-    border-radius: 8px;
+    justify-content: flex-start; /* Start with items at the top */
 }
 
 .project-tile h3 {
@@ -58,9 +54,18 @@ h2 {
     margin: 10px 0;
 }
 
+.project-tile img {
+    width: 100%;
+    height: 200px; /* Ensures all images are the same height */
+    object-fit: cover; /* Crop images nicely */
+    border-radius: 8px;
+    margin: 10px 0; /* Add space around the image */
+}
+
 .project-tile p {
     color: #d1d1d6;
     margin: 10px 0;
+    margin-top: auto; /* Push the text to the bottom */
 }
 
 .tag-container {
@@ -77,24 +82,4 @@ h2 {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px; /* Smaller font size for tags */
-}
-
-.project-tile a {
-    margin-top: auto; /* Ensures the link stays at the bottom of the tile */
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.8em;
-    color: #a1a1a6;
-}
-
-a {
-    color: #9e78d1; /* Soft purple for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
