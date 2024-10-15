@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 0;
-    background-color: #1a1a1a; /* Dark background */
-    color: #f0f0f0; /* Light text color */
+    background-color: #1c1c1e;
+    color: #f5f5f7;
 }
 
 header {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -17,82 +18,69 @@ h1 {
 
 section {
     margin-top: 40px;
-    text-align: center; /* Centers the h2 */
 }
 
 h2 {
-    color: #b19cd9;
-    margin-bottom: 20px;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .project-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto; /* Centers the container */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between tiles */
 }
 
 .project-tile {
-    background-color: #2a2a2a;
-    border: 1px solid #444;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 10px;
-    flex: 1 1 30%; /* Ensures three tiles per row */
-    max-width: 30%;
+    background-color: #2c2c2e;
+    border-radius: 8px;
     padding: 20px;
-    transition: transform 0.2s;
-    text-align: left; /* Aligns the text inside */
-}
-
-.project-tile a {
-    text-decoration: none;
-    color: inherit;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
 }
 
 .project-tile img {
     width: 100%;
-    height: 150px; /* Fixed height for images */
-    object-fit: cover; /* Crops to keep images consistent */
-    margin-bottom: 10px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .project-tile h3 {
-    margin-top: 10px;
-    color: #f0f0f0;
-    font-size: 1.2em;
+    color: #f5f5f7;
+    margin: 15px 0;
 }
 
 .project-tile p {
-    margin: 10px 0;
-    color: #bbb;
-}
-
-.project-tile:hover {
-    transform: scale(1.05); /* Grows the tile slightly on hover */
+    color: #d1d1d6;
 }
 
 .tag {
     display: inline-block;
-    background-color: #b19cd9; /* Classy purple */
-    color: #1a1a1a;
+    background-color: #5c4d7d; /* Classy purple */
+    color: white;
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 5px;
+    margin: 5px 5px 15px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
     font-size: 0.8em;
-    margin: 5px 5px 10px 0;
+    color: #a1a1a6;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 900px) {
-    .project-tile {
-        flex: 1 1 45%; /* Two tiles per row on smaller screens */
-    }
+a {
+    color: #9e78d1; /* Soft purple for links */
+    text-decoration: none;
 }
 
-@media (max-width: 600px) {
-    .project-tile {
-        flex: 1 1 100%; /* One tile per row on the smallest screens */
-    }
+a:hover {
+    text-decoration: underline;
 }
