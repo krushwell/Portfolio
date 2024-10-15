@@ -35,15 +35,32 @@ h2 {
     padding: 0 20px; /* Horizontal padding for sensible margins */
 }
 
-.project-container div {
-    background-color: #2a2a2a; /* Darker background for project divs */
+.project-tile {
+    background-color: #2a2a2a; /* Darker background for project tiles */
     border: 1px solid #444; /* Light border */
     border-radius: 5px; /* Rounded corners */
-    padding: 15px; /* Space inside the div */
-    margin: 10px; /* Space around each project div */
+    margin: 10px; /* Space around each project tile */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
-    flex: 1 1 30%; /* Makes each project div take up about 30% of the row */
-    max-width: 300px; /* Prevents the divs from growing too wide */
+    flex: 1 1 30%; /* Makes each project tile take up about 30% of the row */
+    max-width: 300px; /* Prevents the tiles from growing too wide */
+    overflow: hidden; /* Ensures contents don't overflow */
+    text-align: center; /* Centers the text */
+    transition: transform 0.2s; /* Animation effect on hover */
+}
+
+.project-tile a {
+    display: block; /* Makes the entire tile clickable */
+    color: inherit; /* Inherits text color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.project-tile img {
+    width: 100%; /* Makes the image fill the tile */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.project-tile:hover {
+    transform: scale(1.05); /* Slightly enlarges tile on hover */
 }
 
 /* Media Query for Smaller Screens */
@@ -53,13 +70,13 @@ h2 {
     }
 
     .project-container {
-        flex-direction: column; /* Stacks project divs vertically on small screens */
+        flex-direction: column; /* Stacks project tiles vertically on small screens */
         padding: 0; /* Remove padding on small screens */
     }
 
     .project-container div {
-        flex: 1 1 100%; /* Full width for each project div on small screens */
+        flex: 1 1 100%; /* Full width for each project tile on small screens */
         max-width: 100%; /* Full width on smaller screens */
-        margin: 10px 0; /* Space between stacked project divs */
+        margin: 10px 0; /* Space between stacked project tiles */
     }
 }
