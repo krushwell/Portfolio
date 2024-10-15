@@ -18,12 +18,10 @@ h1 {
 section {
     display: flex; /* Enables flexbox layout */
     flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-    justify-content: center; /* Centers the items horizontally */
+    justify-content: space-between; /* Distributes space evenly */
+    align-items: center; /* Vertically centers items in the section */
     margin-top: 40px;
-}
-
-h2 {
-    color: #b19cd9; /* Classy purple for section headers */
+    height: 100vh; /* Sets the section height to the full viewport height */
 }
 
 section div {
@@ -33,9 +31,23 @@ section div {
     padding: 15px; /* Space inside the div */
     margin: 10px; /* Space around each project div */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
-    flex: 1 1 45%; /* Makes each project div take up about 45% of the row */
-    max-width: 45%; /* Prevents the divs from growing too wide */
+    flex: 1 1 30%; /* Makes each project div take up about 30% of the row */
+    max-width: 30%; /* Prevents the divs from growing too wide */
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    section {
+        flex-direction: column; /* Stacks projects vertically on small screens */
+        height: auto; /* Resets height for smaller screens */
+    }
+
+    section div {
+        flex: 1 1 100%; /* Full width for each project div on small screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
 
 a {
     color: #b19cd9; /* Classy purple for links */
