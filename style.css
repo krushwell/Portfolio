@@ -66,3 +66,35 @@ h2 {
 .tag-container {
     display: flex;
     justify-content: center;
+    gap: 10px; /* Space between tags */
+    flex-wrap: nowrap; /* Prevent tags from breaking into a second row */
+    margin: 10px 0;
+}
+
+.tag {
+    background-color: #5c4d7d; /* Classy purple */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px; /* Smaller font size for tags */
+}
+
+.project-tile a {
+    margin-top: auto; /* Ensures the link stays at the bottom of the tile */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #a1a1a6;
+}
+
+a {
+    color: #9e78d1; /* Soft purple for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
