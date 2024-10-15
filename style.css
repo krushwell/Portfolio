@@ -16,55 +16,53 @@ h1 {
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 40px;
+    text-align: center; /* Centers the h2 */
 }
 
 h2 {
-    margin-bottom: 20px;
     color: #b19cd9;
+    margin-bottom: 20px;
 }
 
 .project-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
+    margin: 0 auto; /* Centers the container */
 }
 
 .project-tile {
     background-color: #2a2a2a;
     border: 1px solid #444;
     border-radius: 5px;
-    margin: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    flex: 1 1 30%;
-    max-width: 300px;
-    overflow: hidden;
-    text-align: center;
+    margin: 10px;
+    flex: 1 1 30%; /* Ensures three tiles per row */
+    max-width: 30%;
+    padding: 20px;
     transition: transform 0.2s;
+    text-align: left; /* Aligns the text inside */
 }
 
 .project-tile a {
-    display: block;
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 .project-tile img {
     width: 100%;
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Crops images to maintain same size */
-    border-bottom: 1px solid #444;
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Crops to keep images consistent */
+    margin-bottom: 10px;
 }
 
 .project-tile h3 {
     margin-top: 10px;
-    font-size: 1.2em;
     color: #f0f0f0;
+    font-size: 1.2em;
 }
 
 .project-tile p {
@@ -73,33 +71,28 @@ h2 {
 }
 
 .project-tile:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Grows the tile slightly on hover */
 }
 
 .tag {
     display: inline-block;
-    background-color: #b19cd9; /* Classy purple for tags */
-    color: #1a1a1a; /* Dark text for contrast */
+    background-color: #b19cd9; /* Classy purple */
+    color: #1a1a1a;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 0.8em;
-    margin: 5px;
+    margin: 5px 5px 10px 0;
 }
 
 /* Media Query for Smaller Screens */
+@media (max-width: 900px) {
+    .project-tile {
+        flex: 1 1 45%; /* Two tiles per row on smaller screens */
+    }
+}
+
 @media (max-width: 600px) {
-    section {
-        flex-direction: column;
-    }
-
-    .project-container {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .project-container div {
-        flex: 1 1 100%;
-        max-width: 100%;
-        margin: 10px 0;
+    .project-tile {
+        flex: 1 1 100%; /* One tile per row on the smallest screens */
     }
 }
