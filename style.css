@@ -61,7 +61,6 @@ h2 {
     object-fit: cover; /* Crop images nicely */
     border-radius: 8px;
     margin: 10px 0; /* Space around the image */
-    align-self: center; /* Center the image within the tile */
 }
 
 .project-tile p {
