@@ -31,6 +31,8 @@ h2 {
     display: flex; /* Enables flexbox layout for the project divs */
     justify-content: space-between; /* Distributes space evenly */
     width: 100%; /* Full width for the container */
+    max-width: 1200px; /* Maximum width for the container */
+    padding: 0 20px; /* Horizontal padding for sensible margins */
 }
 
 .project-container div {
@@ -41,7 +43,7 @@ h2 {
     margin: 10px; /* Space around each project div */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
     flex: 1 1 30%; /* Makes each project div take up about 30% of the row */
-    max-width: 30%; /* Prevents the divs from growing too wide */
+    max-width: 300px; /* Prevents the divs from growing too wide */
 }
 
 /* Media Query for Smaller Screens */
@@ -52,10 +54,12 @@ h2 {
 
     .project-container {
         flex-direction: column; /* Stacks project divs vertically on small screens */
+        padding: 0; /* Remove padding on small screens */
     }
 
     .project-container div {
         flex: 1 1 100%; /* Full width for each project div on small screens */
         max-width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Space between stacked project divs */
     }
 }
