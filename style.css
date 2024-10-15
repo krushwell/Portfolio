@@ -59,10 +59,14 @@ h2 {
     object-fit: cover; /* Crop images nicely */
     border-radius: 8px;
     margin: 10px 0; /* Add space around the image */
+    flex-grow: 1; /* Allow image to take available space */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
 }
 
 .project-tile p {
-    color: #d1d1d6;
+    color: #f5f5f7; /* Change description color to match h3 */
     margin: 10px 0;
     margin-top: auto; /* Ensures the text stays at the bottom */
 }
