@@ -1,31 +1,43 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
     padding: 0;
-    background-color: #1c1c1e;
-    color: #f5f5f7;
+    background-color: #f0f0f0; /* Light grey background for a softer look */
+    color: #333; /* Dark grey for text */
 }
 
 header {
     text-align: center;
     margin-bottom: 40px;
+    background-color: #fff; /* White background for header */
+    padding: 20px;
+    border-bottom: 2px solid #9e78d1; /* Purple border at the bottom */
 }
 
-h1 {
-    font-size: 2.5em;
-    color: #e0e0e0;
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-p.tagline {
+.profile-image {
+    width: 100px; /* Adjust the size as necessary */
+    height: 100px;
+    border-radius: 50%; /* Circle shape for profile picture */
+    margin-right: 20px;
+    border: 3px solid #9e78d1; /* Purple border around profile picture */
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #9e78d1; /* Classy purple */
+}
+
+.profile-info p {
     font-size: 1.2em;
-    color: #9e78d1;
-}
-
-img.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
+    color: #555; /* Darker grey for tagline */
 }
 
 section {
@@ -41,43 +53,43 @@ h2 {
 .project-container {
     display: flex;
     justify-content: space-between; /* Space out tiles evenly across the container */
-    flex-wrap: nowrap; /* Keeps tiles on the same row */
+    flex-wrap: nowrap; /* Forces tiles to stay on the same row */
     gap: 20px; /* Space between tiles */
     width: 100%; /* Ensures the container takes the full width */
-    max-width: 1200px; /* Set a max width for larger screens */
+    max-width: 1200px; /* Optional: set a max width for larger screens */
     margin: 0 auto; /* Centers the container */
 }
 
 .project-tile {
-    background-color: #2c2c2e;
+    background-color: #fff; /* White background for tiles */
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
-    height: 450px; /* Reduced height for a more compact look */
+    width: 300px; /* Fixed width for consistency */
+    height: 400px; /* Adjusted height for better spacing */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Distribute space evenly */
 }
 
 .project-tile h3 {
-    color: #f5f5f7;
+    color: #333; /* Darker text color for title */
     margin: 10px 0;
-    min-height: 2em; /* Ensures h3 has a consistent height */
+    min-height: 40px; /* Ensures consistent height for titles */
 }
 
 .project-tile img {
-    width: 100%;
-    max-height: 180px; /* Reduced image height */
-    object-fit: cover;
+    width: 100%; /* Ensure the image takes the full width */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height for uniformity */
+    object-fit: cover; /* Crop images nicely */
     border-radius: 8px;
-    margin: 10px 0;
-    align-self: center;
+    margin: 10px 0; /* Space around the image */
 }
 
 .project-tile p {
-    color: #f5f5f7; /* Description color same as h3 */
+    color: #555; /* Change description color to a softer grey */
     margin: 10px 0;
     margin-top: auto; /* Ensures the text stays at the bottom */
 }
@@ -86,12 +98,12 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 10px; /* Space between tags */
-    flex-wrap: nowrap; /* Prevents tags from breaking into a second row */
+    flex-wrap: nowrap; /* Prevent tags from breaking into a second row */
     margin: 10px 0;
 }
 
 .tag {
-    background-color: #5c4d7d; /* Classy purple */
+    background-color: #9e78d1; /* Classy purple */
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -108,15 +120,14 @@ h2 {
 footer {
     text-align: center;
     margin-top: 50px;
-    font-size: 0.8em;
-    color: #a1a1a6;
+    font-size: 0.9em;
+    color: #555; /* Darker grey for footer text */
 }
 
-footer a {
+a {
     color: #9e78d1; /* Soft purple for links */
-    text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
     text-decoration: underline;
 }
