@@ -2,46 +2,43 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Light grey background for a softer look */
-    color: #333; /* Dark grey for text */
+    background-color: #1f1f1f; /* Dark background */
+    color: #f5f5f7;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 40px;
-    background-color: #fff; /* White background for header */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
     padding: 20px;
-    border-bottom: 2px solid #9e78d1; /* Purple border at the bottom */
+    background-color: #2c2c2e; /* Darker header background */
+    border-bottom: 2px solid #9e78d1; /* Purple border for depth */
 }
 
-.profile {
+.profile-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
 }
 
-.profile-image {
-    width: 100px; /* Adjust the size as necessary */
-    height: 100px;
-    border-radius: 50%; /* Circle shape for profile picture */
-    margin-right: 20px;
-    border: 3px solid #9e78d1; /* Purple border around profile picture */
+.profile-pic {
+    width: 100px; /* Adjusted size */
+    height: 100px; /* Ensure it's a square */
+    border-radius: 10%; /* Slightly rounded corners */
+    margin-right: 20px; /* Space between image and text */
+    border: 2px solid #9e78d1; /* Purple border around the profile picture */
 }
 
-.profile-info h1 {
-    margin: 0;
-    font-size: 2em;
-    color: #9e78d1; /* Classy purple */
+.header-text h1 {
+    font-size: 2.5em;
+    color: #e0e0e0;
+    margin: 0; /* Remove margin for better alignment */
 }
 
-.profile-info p {
-    font-size: 1.2em;
-    color: #555; /* Darker grey for tagline */
+.header-text p {
+    margin: 5px 0; /* Space below the tagline */
 }
 
 section {
-    margin-top: 40px;
+    margin: 40px 20px; /* Space around the section */
 }
 
 h2 {
@@ -52,7 +49,7 @@ h2 {
 
 .project-container {
     display: flex;
-    justify-content: space-between; /* Space out tiles evenly across the container */
+    justify-content: space-between; /* Space out tiles evenly */
     flex-wrap: nowrap; /* Forces tiles to stay on the same row */
     gap: 20px; /* Space between tiles */
     width: 100%; /* Ensures the container takes the full width */
@@ -61,37 +58,35 @@ h2 {
 }
 
 .project-tile {
-    background-color: #fff; /* White background for tiles */
+    background-color: #3c3c3e; /* Medium grey */
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
     text-align: center;
     width: 300px; /* Fixed width for consistency */
-    height: 400px; /* Adjusted height for better spacing */
+    height: 450px; /* Adjusted height for better balance */
     display: flex;
     flex-direction: column; /* Arrange content vertically */
     justify-content: space-between; /* Distribute space evenly */
 }
 
 .project-tile h3 {
-    color: #333; /* Darker text color for title */
+    color: #f5f5f7;
     margin: 10px 0;
-    min-height: 40px; /* Ensures consistent height for titles */
 }
 
 .project-tile img {
     width: 100%; /* Ensure the image takes the full width */
     height: auto; /* Automatically adjust height to maintain aspect ratio */
-    max-height: 150px; /* Set a maximum height for uniformity */
+    max-height: 200px; /* Set a maximum height for uniformity */
     object-fit: cover; /* Crop images nicely */
     border-radius: 8px;
     margin: 10px 0; /* Space around the image */
 }
 
 .project-tile p {
-    color: #555; /* Change description color to a softer grey */
+    color: #f5f5f7; /* Change description color to match h3 */
     margin: 10px 0;
-    margin-top: auto; /* Ensures the text stays at the bottom */
 }
 
 .tag-container {
@@ -103,7 +98,7 @@ h2 {
 }
 
 .tag {
-    background-color: #9e78d1; /* Classy purple */
+    background-color: #5c4d7d; /* Classy purple */
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -120,14 +115,14 @@ h2 {
 footer {
     text-align: center;
     margin-top: 50px;
-    font-size: 0.9em;
-    color: #555; /* Darker grey for footer text */
+    font-size: 0.8em;
+    color: #a1a1a6;
 }
 
-a {
+footer a {
     color: #9e78d1; /* Soft purple for links */
 }
 
-a:hover {
+footer a:hover {
     text-decoration: underline;
 }
