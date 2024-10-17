@@ -2,71 +2,74 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f; /* Dark background */
+    background-color: #1c1c1e;
     color: #f5f5f7;
 }
 
 header {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    padding: 20px;
-    background-color: #2c2c2e; /* Darker header background */
-    border-bottom: 2px solid #9e78d1; /* Purple border for depth */
-}
-
-.profile-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 30vh; /* Make header take 30% of the screen height */
+    background-color: #2c2c2e;
+    border-bottom: 5px solid #9e78d1; /* Purple border */
+}
+
+.header-content {
+    display: flex;
+    width: 80%; /* Make header content take a comfortable width */
+    max-width: 1200px; /* Optional: set a max width for larger screens */
 }
 
 .profile-pic {
-    width: 100px; /* Adjusted size */
-    height: 100px; /* Ensure it's a square */
-    border-radius: 10%; /* Slightly rounded corners */
-    margin-right: 20px; /* Space between image and text */
-    border: 2px solid #9e78d1; /* Purple border around the profile picture */
+    border-radius: 10px; /* Use a rectangular shape */
+    width: 150px; /* Increased size for profile picture */
+    height: 150px; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between picture and text */
 }
 
-.header-text h1 {
+.header-text {
+    color: #f5f5f7;
+}
+
+h1 {
     font-size: 2.5em;
     color: #e0e0e0;
-    margin: 0; /* Remove margin for better alignment */
-}
-
-.header-text p {
-    margin: 5px 0; /* Space below the tagline */
-}
-
-section {
-    margin: 40px 20px; /* Space around the section */
 }
 
 h2 {
     color: #9e78d1; /* Classy purple for h2 */
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
 .project-container {
     display: flex;
-    justify-content: space-between; /* Space out tiles evenly */
-    flex-wrap: nowrap; /* Forces tiles to stay on the same row */
-    gap: 20px; /* Space between tiles */
-    width: 100%; /* Ensures the container takes the full width */
-    max-width: 1200px; /* Optional: set a max width for larger screens */
-    margin: 0 auto; /* Centers the container */
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-tile {
-    background-color: #3c3c3e; /* Medium grey */
+    background-color: #3c3c3e; /* Dark grey for better contrast */
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px; /* Fixed width for consistency */
-    height: 450px; /* Adjusted height for better balance */
+    width: 300px;
+    height: 450px; /* Reduced height */
     display: flex;
-    flex-direction: column; /* Arrange content vertically */
+    flex-direction: column;
     justify-content: space-between; /* Distribute space evenly */
 }
 
@@ -76,24 +79,23 @@ h2 {
 }
 
 .project-tile img {
-    width: 100%; /* Ensure the image takes the full width */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height for uniformity */
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Reduced max height for uniformity */
     object-fit: cover; /* Crop images nicely */
     border-radius: 8px;
     margin: 10px 0; /* Space around the image */
 }
 
 .project-tile p {
-    color: #f5f5f7; /* Change description color to match h3 */
+    color: #f5f5f7;
     margin: 10px 0;
 }
 
 .tag-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between tags */
-    flex-wrap: nowrap; /* Prevent tags from breaking into a second row */
+    gap: 10px;
     margin: 10px 0;
 }
 
@@ -102,14 +104,14 @@ h2 {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 12px; /* Smaller font size for tags */
+    font-size: 12px;
 }
 
 .project-tile a {
     display: flex;
-    flex-direction: column; /* Arrange content vertically */
-    height: 100%; /* Make the link fill the tile */
-    text-decoration: none; /* Removes underline from links */
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
 }
 
 footer {
@@ -119,10 +121,20 @@ footer {
     color: #a1a1a6;
 }
 
-footer a {
+a {
     color: #9e78d1; /* Soft purple for links */
 }
 
-footer a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+/* Additional graphic elements */
+.project-tile {
+    border: 2px solid #5c4d7d; /* Add border around project tiles */
+    transition: transform 0.2s; /* Add a hover effect */
+}
+
+.project-tile:hover {
+    transform: scale(1.02); /* Scale effect on hover */
 }
