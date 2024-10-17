@@ -51,25 +51,25 @@ h2 {
 .project-tile {
     background-color: #2c2c2e;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px; /* Fixed width for consistency */
-    height: 400px; /* Reduced height by approx 20-25% */
+    width: 300px;
+    height: 450px; /* Reduced height for a more compact look */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Evenly space out content */
+    justify-content: space-between;
 }
 
 .project-tile h3 {
     color: #f5f5f7;
     margin: 10px 0;
+    min-height: 2em; /* Ensures h3 has a consistent height */
 }
 
 .project-tile img {
     width: 100%;
-    height: auto;
-    max-height: 150px; /* Adjusted max height to reduce tile height */
+    max-height: 180px; /* Reduced image height */
     object-fit: cover;
     border-radius: 8px;
     margin: 10px 0;
