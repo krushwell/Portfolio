@@ -114,6 +114,30 @@ h2 {
     text-decoration: none;
 }
 
+.pdf-images {
+    padding: 40px; /* Add padding around the section */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center-align images */
+    gap: 20px; /* Space between images */
+}
+
+.pdf-images h2 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Ensure the description is aligned with the images */
+.description {
+    max-width: 800px; /* Optional: Set a max width for description */
+    margin: 0 auto; /* Center-align the description */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+
 footer {
     text-align: center;
     margin-top: 50px;
