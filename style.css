@@ -24,13 +24,15 @@ header {
 
 .profile-pic {
   border-radius: 10px; /* Use a rectangular shape */
-  /* width: 150px; */ /* Increased size for profile picture */
   height: 70%; /* Maintain aspect ratio */
   margin: auto; /* Space between picture and text */
 }
 
 .header-text {
   color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -40,52 +42,54 @@ h1 {
 
 h2 {
   color: #9e78d1; /* Classy purple for h2 */
+  margin-bottom: 30px;
 }
 
 section {
   margin: 40px 0;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .project-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
-  gap: 20px;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .project-container {
+    flex-direction: row;
+  }
 }
 
 .project-tile {
-  background-color: #3c3c3e; /* Dark grey for better contrast */
+  background-color: #3c3c3e;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px;
-  height: 450px; /* Reduced height */
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribute space evenly */
+  flex-direction: column; /* Default: column for smaller screens */
+  justify-content: space-between;
+  border: 2px solid #5c4d7d;
+  transition: transform 0.2s;
+  width: 300px;
 }
 
 .project-tile h3 {
   color: #f5f5f7;
   margin: 10px 0;
+  height: 30px;
 }
 
 .project-tile img {
-  width: 100%;
-  height: auto;
-  max-height: 150px; /* Reduced max height for uniformity */
-  object-fit: cover; /* Crop images nicely */
+  height: 150px;
+  width: fit-content;
   border-radius: 8px;
-  margin: 10px 0; /* Space around the image */
+  margin: 20px 0;
+  align-self: center;
 }
 
 .project-tile p {
@@ -153,12 +157,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Additional graphic elements */
-.project-tile {
-  border: 2px solid #5c4d7d; /* Add border around project tiles */
-  transition: transform 0.2s; /* Add a hover effect */
-}
-
 .project-tile:hover {
   transform: scale(1.02); /* Scale effect on hover */
+}
+
+#project-header {
+  text-align: center;
 }
