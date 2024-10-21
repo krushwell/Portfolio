@@ -1,164 +1,164 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1c1c1e;
-    color: #f5f5f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1e;
+  color: #f5f5f7;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30vh; /* Make header take 30% of the screen height */
-    background-color: #2c2c2e;
-    border-bottom: 5px solid #9e78d1; /* Purple border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh; /* Make header take 30% of the screen height */
+  background-color: #2c2c2e;
+  border-bottom: 5px solid #9e78d1; /* Purple border */
 }
 
 .header-content {
-    display: flex;
-    width: 80%; /* Make header content take a comfortable width */
-    max-width: 1200px; /* Optional: set a max width for larger screens */
+  display: flex;
+  width: 80%; /* Make header content take a comfortable width */
+  max-width: 1200px; /* Optional: set a max width for larger screens */
+  height: 100%;
 }
 
 .profile-pic {
-    border-radius: 10px; /* Use a rectangular shape */
-    width: 150px; /* Increased size for profile picture */
-    height: 150px; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between picture and text */
+  border-radius: 10px; /* Use a rectangular shape */
+  /* width: 150px; */ /* Increased size for profile picture */
+  height: 70%; /* Maintain aspect ratio */
+  margin: auto; /* Space between picture and text */
 }
 
 .header-text {
-    color: #f5f5f7;
+  color: #f5f5f7;
 }
 
 h1 {
-    font-size: 2.5em;
-    color: #e0e0e0;
+  font-size: 2.5em;
+  color: #e0e0e0;
 }
 
 h2 {
-    color: #9e78d1; /* Classy purple for h2 */
+  color: #9e78d1; /* Classy purple for h2 */
 }
 
 section {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-tile {
-    background-color: #3c3c3e; /* Dark grey for better contrast */
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 300px;
-    height: 450px; /* Reduced height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribute space evenly */
+  background-color: #3c3c3e; /* Dark grey for better contrast */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  height: 450px; /* Reduced height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
 }
 
 .project-tile h3 {
-    color: #f5f5f7;
-    margin: 10px 0;
+  color: #f5f5f7;
+  margin: 10px 0;
 }
 
 .project-tile img {
-    width: 100%;
-    height: auto;
-    max-height: 150px; /* Reduced max height for uniformity */
-    object-fit: cover; /* Crop images nicely */
-    border-radius: 8px;
-    margin: 10px 0; /* Space around the image */
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* Reduced max height for uniformity */
+  object-fit: cover; /* Crop images nicely */
+  border-radius: 8px;
+  margin: 10px 0; /* Space around the image */
 }
 
 .project-tile p {
-    color: #f5f5f7;
-    margin: 10px 0;
+  color: #f5f5f7;
+  margin: 10px 0;
 }
 
 .tag-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
 }
 
 .tag {
-    background-color: #5c4d7d; /* Classy purple */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
+  background-color: #5c4d7d; /* Classy purple */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .project-tile a {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
 }
 
 .pdf-images {
-    padding: 40px; /* Add padding around the section */
+  padding: 40px; /* Add padding around the section */
 }
 
 .image-container {
-    display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center-align images */
-    gap: 20px; /* Space between images */
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center-align images */
+  gap: 20px; /* Space between images */
 }
 
 .pdf-images h2 {
-    text-align: center; /* Center-align the heading */
-    margin-bottom: 20px; /* Space below the heading */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 20px; /* Space below the heading */
 }
 
 /* Ensure the description is aligned with the images */
 .description {
-    max-width: 800px; /* Optional: Set a max width for description */
-    margin: 0 auto; /* Center-align the description */
-    padding: 0 20px; /* Add horizontal padding */
+  max-width: 800px; /* Optional: Set a max width for description */
+  margin: 0 auto; /* Center-align the description */
+  padding: 0 20px; /* Add horizontal padding */
 }
 
-
 footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.8em;
-    color: #a1a1a6;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.8em;
+  color: #a1a1a6;
 }
 
 a {
-    color: #9e78d1; /* Soft purple for links */
+  color: #9e78d1; /* Soft purple for links */
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Additional graphic elements */
 .project-tile {
-    border: 2px solid #5c4d7d; /* Add border around project tiles */
-    transition: transform 0.2s; /* Add a hover effect */
+  border: 2px solid #5c4d7d; /* Add border around project tiles */
+  transition: transform 0.2s; /* Add a hover effect */
 }
 
 .project-tile:hover {
-    transform: scale(1.02); /* Scale effect on hover */
+  transform: scale(1.02); /* Scale effect on hover */
 }
