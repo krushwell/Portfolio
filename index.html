@@ -29,56 +29,49 @@
     <section>
       <h2 id="project-header">Projects</h2>
       <div class="project-container">
-        <div class="project-tile">
-          <a href="seo_deep_dive/index.html">
-            <div class="project-title-text">
-              <h3>SEO Deep-Dive</h3>
-            </div>
-            <div class="tag-container">
-              <span class="tag">Python</span>
-              <span class="tag">Tableau</span>
-              <span class="tag">SEO</span>
-              <span class="tag">Marketing</span>
-            </div>
-            <img src="images/seo.png" alt="SEO Deep Dive Project" />
-            <p>
-              How to identify profitable search queries for improved SEO rank.
-            </p>
-          </a>
+        <div class="project-tile" onclick="openModal('seoModal')">
+          <div class="project-title-text">
+            <h3>SEO Deep-Dive</h3>
+          </div>
+          <div class="tag-container">
+            <span class="tag">Python</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">SEO</span>
+            <span class="tag">Marketing</span>
+          </div>
+          <img src="images/seo.png" alt="SEO Deep Dive Project" />
+          <p>
+            How to identify profitable search queries for improved SEO rank.
+          </p>
+        </div>
+        <div class="project-tile" onclick="openModal('eurovisionModal')">
+          <div class="project-title-text">
+            <h3>Eurovision Trends</h3>
+            <p>(in-progress)</p>
+          </div>
+          <div class="tag-container">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Dashboarding</span>
+          </div>
+          <img src="images/eurovision.jpg" alt="Eurovision Trends Project" />
+          <p>What factors contribute to placing in the top 5 positions?</p>
         </div>
 
-        <div class="project-tile">
-          <a href="eurovision_trends/index.html">
-            <div class="project-title-text">
-              <h3>Eurovision Trends</h3>
-              <p>(in-progress)</p>
-            </div>
-            <div class="tag-container">
-              <span class="tag">SQL</span>
-              <span class="tag">Python</span>
-              <span class="tag">Tableau</span>
-              <span class="tag">Dashboarding</span>
-            </div>
-            <img src="images/eurovision.jpg" alt="Eurovision Trends Project" />
-            <p>What factors contribute to placing in the top 5 positions?</p>
-          </a>
-        </div>
-
-        <div class="project-tile">
-          <a href="ferry_efficiency/index.html">
-            <div class="project-title-text">
-              <h3>Fuel Efficiency Analysis</h3>
-              <p>(in-progress)</p>
-            </div>
-            <div class="tag-container">
-              <span class="tag">SQL</span>
-              <span class="tag">Python</span>
-              <span class="tag">Dash</span>
-              <span class="tag">Jupyter Notebooks</span>
-            </div>
-            <img src="images/ferry.jpg" alt="Ferry Efficiency Project" />
-            <p>Weighing the costs of cleaning vs fuel efficiency savings.</p>
-          </a>
+        <div class="project-tile" onclick="openModal('ferryModal')">
+          <div class="project-title-text">
+            <h3>Fuel Efficiency Analysis</h3>
+            <p>(in-progress)</p>
+          </div>
+          <div class="tag-container">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Dash</span>
+            <span class="tag">Jupyter Notebooks</span>
+          </div>
+          <img src="images/ferry.jpg" alt="Ferry Efficiency Project" />
+          <p>Weighing the costs of cleaning vs fuel efficiency savings.</p>
         </div>
       </div>
     </section>
@@ -97,5 +90,176 @@
         >
       </p>
     </footer>
+
+    <div id="seoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('seoModal')">&times;</span>
+        <h1>Project 1: SEO Deep-Dive</h1>
+        <hr class="purple-line" />
+        <p>
+          My client wanted to identify profitable opportunities to target
+          improved SEO rankings. I analysed rank, search volume, and
+          competitiveness of search terms, prioritised by profitability for the
+          company, and identified substantial niche areas for the client to
+          focus their SEO strategy on. I used Python to clean my data and build
+          the database, and Tableau to create relevant visuals to aid
+          explanations to non-technical and non-marketing stakeholders.
+        </p>
+        <section class="pdf-images">
+          <h2>PDF Preview:</h2>
+
+          <div class="image-container">
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (01).jpg"
+              alt="Page 1 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (02).jpg"
+              alt="Page 2 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (03).jpg"
+              alt="Page 3 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (04).jpg"
+              alt="Page 4 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (05).jpg"
+              alt="Page 5 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (06).jpg"
+              alt="Page 6 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (07).jpg"
+              alt="Page 7 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (08).jpg"
+              alt="Page 8 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (09).jpg"
+              alt="Page 9 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (10).jpg"
+              alt="Page 10 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (11).jpg"
+              alt="Page 11 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (12).jpg"
+              alt="Page 12 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (13).jpg"
+              alt="Page 13 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (14).jpg"
+              alt="Page 14 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (15).jpg"
+              alt="Page 15 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (16).jpg"
+              alt="Page 16 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (17).jpg"
+              alt="Page 17 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (18).jpg"
+              alt="Page 18 of SEO Analysis PDF"
+            />
+            <img
+              src="slides_as_jpg/SEO Analysis_Katie Rushford_Client Anonymised (19).jpg"
+              alt="Page 19 of SEO Analysis PDF"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="eurovisionModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('eurovisionModal')"
+          >&times;</span
+        >
+        <h1>Project 2: Eurovision Trends</h1>
+        <hr class="purple-line" />
+        <p>
+          I started nerding-out over the history and influences of Eurovision
+          results and wanted to see if I could build some cool visualisations of
+          trends or even predictions of what factors contribute to placing in
+          the top 5 overall positions. I was particularly interested in the
+          relationship (if any) between the professional jury vs general
+          population scores. I used SQL and Python for data management and
+          querying and Tableau to build the visual story.
+        </p>
+        <section class="pdf-images">
+          <h2>Tableau Dashboard:</h2>
+          <div class="image-container">
+            <a
+              href="https://public.tableau.com/views/EurovisionDashboard_17280375357720/Sheet3?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+              target="_blank"
+              >View the Interactive Dashboard</a
+            >
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="ferryModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('ferryModal')">&times;</span>
+        <h1>Project 3: Ferry Operator Costs Analysis</h1>
+        <hr class="purple-line" />
+        <p>
+          A ferry operator client wanted to optimise the costs of regular
+          maintenance and servicing against the improved fuel efficiency gains.
+          This project involved detailed analysis of operational data,
+          predictive modeling to forecast fuel consumption, and cost-benefit
+          analysis to determine optimal maintenance schedules. (Project details
+          will be added soon.)
+        </p>
+        <section class="pdf-images">
+          <h2>Project Information:</h2>
+          <div class="image-container">
+            <p>(Detailed information and visualizations coming soon.)</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      // Modal functionality
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'block'
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none'
+      }
+
+      // Close modal when clicking outside of it
+      window.onclick = function (event) {
+        const modals = document.querySelectorAll('.modal')
+        modals.forEach(function (modal) {
+          if (event.target == modal) {
+            modal.style.display = 'none'
+          }
+        })
+      }
+    </script>
   </body>
 </html>
