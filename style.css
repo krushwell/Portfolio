@@ -1,166 +1,170 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1c1c1e;
-  color: #f5f5f7;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
 }
 
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #004c99;
+}
+
+/* Header Styles */
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh; /* Make header take 30% of the screen height */
-  background-color: #2c2c2e;
-  border-bottom: 5px solid #9e78d1; /* Purple border */
+  height: 60vh;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e6e6e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
   display: flex;
-  width: 80%; /* Make header content take a comfortable width */
-  max-width: 1200px; /* Optional: set a max width for larger screens */
-  height: 100%;
-}
-
-.profile-pic {
-  border-radius: 10px; /* Use a rectangular shape */
-  height: 70%; /* Maintain aspect ratio */
-  margin: auto; /* Space between picture and text */
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .header-text {
-  color: #f5f5f7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  border-radius: 30%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 2.5em;
-  color: #e0e0e0;
+  font-size: 2.2em;
+  color: #222;
+  margin: 10px 0;
 }
 
 h2 {
   color: #9e78d1; /* Classy purple for h2 */
   margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
+/* Section Styles */
 section {
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
+/* Project Container Styles */
 .project-container {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-  width: 100%;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 @media (min-width: 900px) {
   .project-container {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 }
 
+/* Project Tile Styles */
 .project-tile {
-  background-color: #3c3c3e;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
+  width: 280px;
+}
+
+.project-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title-text {
+  height: 60px;
   display: flex;
-  flex-direction: column; /* Default: column for smaller screens */
-  justify-content: space-between;
-  border: 2px solid #5c4d7d;
-  transition: transform 0.2s;
-  width: 300px;
+  flex-direction: column;
 }
 
 .project-tile h3 {
-  color: #f5f5f7;
-  margin: 10px 0;
-  height: 30px;
+  color: #222;
+  margin: 0;
+  font-size: 1.3em;
 }
 
 .project-tile img {
   height: 150px;
-  width: fit-content;
-  border-radius: 8px;
-  margin: 20px 0;
-  align-self: center;
+  width: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+  object-fit: cover;
 }
 
 .project-tile p {
-  color: #f5f5f7;
-  margin: 10px 0;
-}
-
-.tag-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 10px 0;
-}
-
-.tag {
-  background-color: #5c4d7d; /* Classy purple */
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
+  color: #666;
+  margin: 0;
+  font-size: 0.95em;
 }
 
 .project-tile a {
   display: flex;
   flex-direction: column;
   height: 100%;
-  text-decoration: none;
+  color: inherit;
 }
 
-.pdf-images {
-  padding: 40px; /* Add padding around the section */
-}
-
-.image-container {
+/* Tag Styles */
+.tag-container {
   display: flex;
-  flex-direction: column; /* Stack images vertically */
-  align-items: center; /* Center-align images */
-  gap: 20px; /* Space between images */
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
-.pdf-images h2 {
-  text-align: center; /* Center-align the heading */
-  margin-bottom: 20px; /* Space below the heading */
+.tag {
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: 0.85em;
 }
 
-/* Ensure the description is aligned with the images */
-.description {
-  max-width: 800px; /* Optional: Set a max width for description */
-  margin: 0 auto; /* Center-align the description */
-  padding: 0 20px; /* Add horizontal padding */
-}
-
+/* Footer Styles */
 footer {
   text-align: center;
   margin-top: 50px;
-  font-size: 0.8em;
-  color: #a1a1a6;
+  padding: 20px;
+  background-color: #ffffff;
+  font-size: 0.9em;
+  color: #888;
+  border-top: 2px solid #e6e6e6;
 }
 
-a {
-  color: #9e78d1; /* Soft purple for links */
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.project-tile:hover {
-  transform: scale(1.02); /* Scale effect on hover */
-}
-
+/* Project Header */
 #project-header {
   text-align: center;
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 40px;
 }
