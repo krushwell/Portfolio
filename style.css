@@ -20,6 +20,7 @@ body {
   background-color: var(--primary-bg);
   color: var(--dark-text);
   line-height: 1.6;
+  text-align: center;
 }
 
 a {
@@ -37,7 +38,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
   background-color: var(--secondary-bg);
   border-bottom: 2px solid var(--border-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -50,6 +50,7 @@ header {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin: 50px 0;
 }
 
 .header-text {
@@ -60,7 +61,6 @@ header {
   border-radius: 30%;
   height: 200px;
   object-fit: contain;
-  margin-bottom: 20px;
 }
 
 h1 {
@@ -174,12 +174,15 @@ footer {
   border-top: 2px solid var(--border-color);
 }
 
-/* Project Header */
-#project-header {
+.project-header {
   text-align: center;
   font-size: 2em;
   color: var(--light-text);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.portfolio-introduction {
+  margin: 0 0 50px 0;
 }
 
 /* Modal Styles */
@@ -225,8 +228,4 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.image-container img {
-  margin: 10px 0;
 }
