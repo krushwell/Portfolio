@@ -229,3 +229,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+.contact-links a {
+  margin-right: 20px;
+}
